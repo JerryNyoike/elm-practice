@@ -22,19 +22,13 @@ type alias Model =
     { name : String
     , password : String
     , passwordAgain : String
-    , errors : Errors
     }
-
-
-type alias Errors =
-    { error : String
-    , message : String
-    }
+ 
 
 
 init : Model
 init =
-    Model "" "" "" (Errors "" "")
+    Model "" "" ""
 
 
 
